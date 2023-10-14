@@ -1956,11 +1956,23 @@ font-size: 14px;
   .header-bottom-holder-icon-right>a{
     font-size: 12px;
   }
+  .menu-hg>i{
+    font-size: 10px;
+  }
+  .i-shop>i{
+    font-size: 10px;
+  }
+  .i-search>i{
+    font-size: 10px;
+  }
+  .i-user>i{
+    font-size: 10px;
+  }
   .fa-solid, .fa-chevron-down {
-  font-size: 12px;
+  font-size: 10px;
   }
   .fa-solid, .fas {
-    font-size: 12px;
+    font-size: 10px;
   }
   .header-bottom-holder-text{
     min-width: 0px;
@@ -2120,6 +2132,15 @@ font-size: 14px;
   }
   .box-holder-text1-rate-num{
     font-size: 9px;
+  }
+  .fa-solid, .fas{
+    font-size: 6px;
+  }
+  .box-holder-text1-rate{
+    min-width: 60px;
+  }
+  .box-holder-text1-rate-num{
+    font-size: 8px;
   }
     /*_____________________q shop 576___________*/
     .q-shop{
