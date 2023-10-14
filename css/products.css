@@ -905,6 +905,47 @@ body{
     min-width: 180px;
     margin-left: 10px;
   }
+  /*________________photos 992____________*/
+  .photo>img {
+    max-width: 200px;
+  }
+  .holder-album>a>img {
+    max-width: 40px;
+  }
+  .holder-island{
+    min-height: 270px;
+  }
+  .icon-app{
+    height: 140px;
+  }
+  .island>h2{
+    font-size: 12px;
+    margin-top: -125px;
+  }
+  .island>p{
+    font-size: 10px;
+  }
+  /*_______________description 992_________*/
+  .lorem{
+    font-size: 12px;
+  }
+  .holder-q-shop-information-scent-add-counter{
+    min-width: 240px;
+  }
+  .Reviews{
+    min-width: 150px;
+  }
+  .holder-star{
+    font-size: 12px;
+  }
+  .holder-number{
+    font-size: 14px;
+  }
+  #candles-select-box{
+    font-size: 10px;
+    min-width: 180px;
+  }
+
 }
 @media only screen and ( max-width:768px){
   .container{
@@ -932,6 +973,47 @@ body{
   }
   .search-nav-item{
   margin-top: 120px;
+  }
+  /*______________photos 768________*/
+  .photo>img{
+    max-width: 150px;
+  }
+  /*______________text 768_____________*/
+  .text{
+    max-width: 100px;
+  }
+  .lorem{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 160px;
+    font-size: 10px;
+  }
+  .holder-q-shop-information-scent-add-counter{
+    min-width: 160px;
+  }
+  .add-to-cart{
+    min-width: 100px;
+    font-size: 5px;
+  }
+  #candles-select-box{
+    font-size: 8px;
+    min-width: 100px;
+    padding: 4px 2px;
+    letter-spacing: 1px;
+  }
+  .holder-q-shop-information-discription{
+    min-width: 173px;
+    max-width: 177px;
+  }
+  .holder-q-shop-information-discription-title{
+    font-size: 6px;
+  }
+  .holder-q-shop-information-discription-text{
+    font-size: 10px;
+  }
+  .holder-q-shop-information-title{
+    font-size: 12px;
+    min-width: 100px;
   }
 }
 @media only screen and ( max-width:576px){
@@ -1200,6 +1282,72 @@ body{
       }
       .search-nav-item{
         margin-top: 100px;
+      }
+      /*______________photos 576__________*/
+      .photo>img{
+        max-width: 70px;
+      }
+      .holder-album>a>img{
+        max-width: 30px;
+      }
+      .holder-island{
+        min-height: 150px;
+      }
+      .island>h2{
+        margin-top: -80px;
+        font-size: 10px;
+      }
+      .island>p{
+        font-size: 8px;
+      }
+      .icon-app{
+        height: 95px;
+      }
+      /*_______________description576________________*/
+      .holder-number{
+        font-size: 10px;
+      }
+      .fa-solid, .fas{
+        font-size: 8px;
+      }
+      .Reviews{
+        min-width: 105px;
+        margin-bottom: 5px;
+      }
+      .holder-q-shop-information-scent>p {
+        font-size: 8px;
+      }
+      .holder-q-shop-information-title{
+        margin-bottom: 5px;
+      }
+      .holder-q-shop-information-price{
+        margin-bottom: 5px;
+      }
+      .holder-q-shop-information-scent-counter{
+        max-height: 25px;
+      }
+      .holder-q-shop-information-scent-add-counter{
+        min-width: 120px;
+      }
+      .add-to-cart{
+        font-size: 5px;
+        min-width: 80px;
+        margin-left: 10px;
+        padding: 6px 13px;
+      }
+      .lorem{
+        font-size: 8px;
+        max-width: 115px;
+        margin-top: 5px;
+      }
+      .holder-q-shop-information-discription{
+        min-width: 110px;
+      }
+      .holder-q-shop-information{
+        margin-left: 10px;
+      }
+      #candles-select-box{
+        font-size: 6px;
       }
   
   }
