@@ -476,26 +476,28 @@ important.insertAdjacentHTML("afterbegin",`
 </div>
 `)
 function clickHandler(event){
+    
     event.preventDefault()
-    let images=$.querySelectorAll(".holder-album a img")
-    images.forEach(img=>{
-        img.style.border="none"
-    })
-    event.target.parentElement.style.border="none"
 
-    if(event.target.src==="http://127.0.0.1:5500/candel%20web2/image/item/Capture1.PNG"){
+    let images=$.querySelectorAll(".holder-album a img")
+
+    images.forEach(img=>{
+
+        img.style.border="none"
+        
+    })
+
+    if(event.target.src.toLowerCase().includes("capture1.png")){
 
         window.scrollTo(0,70)
 
-    }else if(event.target.src==="http://127.0.0.1:5500/candel%20web2/image/item/Capture8.PNG"){
+    }else if(event.target.src.toLowerCase().includes("capture8.png")){
 
          window.scrollTo(0,1020)
-
 
     }else{
 
         window.scrollTo(0,520)
-
 
     }
     event.target.style.border="1px solid black"
