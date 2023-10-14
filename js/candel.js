@@ -556,14 +556,9 @@ function visibleQShopGenrator(product){
     let candlesSelectBox=$.createElement("select")
     candlesSelectBox.setAttribute("name","candles")
     candlesSelectBox.setAttribute("id","candles-select-box")
+    candlesSelectBox.setAttribute("onchange","idHandler(event)")
 
-    let candlesSelectBoxOption0=$.createElement("option")
-    candlesSelectBoxOption0.setAttribute("value",product.tite1)
-    candlesSelectBoxOption0.innerHTML=product.title2
-    
-    let candlesSelectBoxOption1=$.createElement("option")
-    candlesSelectBoxOption1.setAttribute("value",product.tite1)
-    candlesSelectBoxOption1.innerHTML="Santorini Escapist Candle"
+
     
     let candlesSelectBoxOption2=$.createElement("option")
     candlesSelectBoxOption2.setAttribute("value","Brooklyn Escapist Candle")
@@ -585,17 +580,9 @@ function visibleQShopGenrator(product){
     candlesSelectBoxOption6.setAttribute("value","Santa Fe Escapist Candle")
     candlesSelectBoxOption6.innerHTML="Santa Fe Escapist Candle"
 
-    let candlesSelectBoxOption7=$.createElement("option")
-    candlesSelectBoxOption7.setAttribute("value","Tuileries Escapist Candle")
-    candlesSelectBoxOption7.innerHTML="Tuileries Escapist Candle"
-
-    let candlesSelectBoxOption8=$.createElement("option")
-    candlesSelectBoxOption8.setAttribute("value","Sevilla Escapist Candle")
-    candlesSelectBoxOption8.innerHTML="Sevilla Escapist Candle"
-
     let candlesSelectBoxOption9=$.createElement("option")
-    candlesSelectBoxOption9.setAttribute("value","Bali Escapist Candle")
-    candlesSelectBoxOption9.innerHTML="Bali Escapist Candle"
+    candlesSelectBoxOption9.setAttribute("value","Catskills Escapist Candle")
+    candlesSelectBoxOption9.innerHTML="Catskills Escapist Candle"
 
     let holderQShopInformationScentAddCounter=$.createElement("div")
     holderQShopInformationScentAddCounter.className="holder-q-shop-information-scent-add-counter"
@@ -722,7 +709,7 @@ function visibleQShopGenrator(product){
     holderQShopInformationTitlePrice.append(holderQShopInformationTitle,holderQShopInformationPrice)
     holderQShopInformationScent.append(holderQShopInformationScentP,holderQShopInformationScentSelector,holderQShopInformationScentAddCounter)
     holderQShopInformationScentSelector.append(candlesSelectBox)
-    candlesSelectBox.append(candlesSelectBoxOption0,candlesSelectBoxOption1,candlesSelectBoxOption2,candlesSelectBoxOption3,candlesSelectBoxOption4,candlesSelectBoxOption5,candlesSelectBoxOption6,candlesSelectBoxOption7,candlesSelectBoxOption8,candlesSelectBoxOption9)
+    candlesSelectBox.append(candlesSelectBoxOption2,candlesSelectBoxOption3,candlesSelectBoxOption4,candlesSelectBoxOption5,candlesSelectBoxOption6,candlesSelectBoxOption9)
     holderQShopInformationScentAddCounter.append(holderQShopInformationScentCounter,holderQShopInformationScentAdd)
     holderQShopInformationScentCounter.append(minusCounterBtn,inputCounter,plusCounterBtn)
     holderQShopInformationScentAdd.append(addToCartBtn)
@@ -730,6 +717,14 @@ function visibleQShopGenrator(product){
 
 }
 
+function idHandler(event){
+
+    let result =items.find(item=>{
+
+        return item.title2===event.target.value
+    })
+    location=`products.html?id=${result.id}`
+}
 
 
 function increaseCounter(inputCounter){
