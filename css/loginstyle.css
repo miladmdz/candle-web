@@ -1602,7 +1602,7 @@ transition: all 0.5s;
     }
     .header-bottom-holder-icon-right{
       min-width: 50px;
-      margin-left: 255px;
+      margin-left: 30px;
     }
     .header-bottom-holder-icon-right>a{
       font-size: 7px;
