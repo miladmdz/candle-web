@@ -486,20 +486,68 @@ function clickHandler(event){
         img.style.border="none"
         
     })
+    if(window.innerWidth>=992){
+        if(event.target.src.toLowerCase().includes("capture1.png")){
 
-    if(event.target.src.toLowerCase().includes("capture1.png")){
-
-        window.scrollTo(0,70)
-
-    }else if(event.target.src.toLowerCase().includes("capture8.png")){
-
-         window.scrollTo(0,1020)
-
-    }else{
-
-        window.scrollTo(0,520)
-
+            window.scrollTo(0,70)
+    
+        }else if(event.target.src.toLowerCase().includes("capture8.png")){
+    
+             window.scrollTo(0,1020)
+    
+        }else{
+    
+            window.scrollTo(0,520)
+    
+        }
     }
+    if(window.innerWidth<992&&window.innerWidth>=768){
+        if(event.target.src.toLowerCase().includes("capture1.png")){
+
+            window.scrollTo(0,10)
+    
+        }else if(event.target.src.toLowerCase().includes("capture8.png")){
+    
+             window.scrollTo(0,500)
+    
+        }else{
+    
+            window.scrollTo(0,250)
+    
+        }
+    } 
+    if(window.innerWidth<768&&window.innerWidth>=576){
+        console.log("hello");
+        if(event.target.src.toLowerCase().includes("capture1.png")){
+
+            window.scrollTo(0,0)
+    
+        }else if(event.target.src.toLowerCase().includes("capture8.png")){
+    
+             window.scrollTo(0,350)
+    
+        }else{
+    
+            window.scrollTo(0,150)
+    
+        }
+    } if(window.innerWidth<576){
+        if(event.target.src.toLowerCase().includes("capture1.png")){
+
+            window.scrollTo(0,0)
+    
+        }else if(event.target.src.toLowerCase().includes("capture8.png")){
+    
+             window.scrollTo(0,150)
+    
+        }else{
+    
+            window.scrollTo(0,50)
+    
+        }
+    }
+    
+    
     event.target.style.border="1px solid black"
 }
 
